@@ -1,67 +1,80 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  main {
-    padding: 20px;
-    display: flex;
-  }
-  
-  .colleges-list {
-    flex: 0 0 30%;
-  }
-  
-  .colleges-list li {
-    list-style: none;
-    margin: 10px;
-  }
-  
-  .college-details {
-    background-color: #f1f1f1;
-    padding: 10px;
-  }
-  
-  .college-details h3 {
-    margin: 5px 0;
-  }
-  
-  .college-info {
-    flex: 1;
-    margin-left: 20px;
-  }
-  
-  .college-info h2 {
-    border-bottom: 2px solid #333;
-  }
-  
-  .comparison {
-    margin-top: 20px;
-  }
-  
-  .comparison h3 {
-    margin-bottom: 10px;
-  }
-  
-  .comparison ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .comparison li {
-    margin-bottom: 5px;
-  }
-  
-  .comparison-chart {
-    border: 1px solid #333;
-    padding: 10px;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(238, 243, 241);
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+}
+
+.colleges-list {
+  flex: 0 0 30%;
+}
+
+.colleges-list li {
+  list-style: none;
+  margin: 10px;
+}
+
+.college-details {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.college-details h3 {
+  margin: 5px 0;
+  color: #333;
+}
+
+.college-info {
+  flex: 1;
+  margin-left: 20px;
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin: 20px 20;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.college-info h2 {
+  border-bottom: 2px solid #333;
+  width: 350px;
+  color: #333;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.college-info:hover {
+  background-color: rgba(0, 123, 255, 0.3);
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+}
+
+.vertical-line {
+  border-left: 2px solid #ccc;
+  height: 540%;
+  position: absolute;
+  left: 30%;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
