@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .colleges-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .colleges-list li {
+    list-style: none;
+    width: 300px;
+    margin: 20px;
+  }
+  
+  .college-details {
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  .college-details h3 {
+    margin: 5px 0;
+  }
+  
+  .college-info {
+    display: none;
+  }
+  
+  .college-info:target {
+    display: block;
+  }
+  
+  .comparison {
+    margin-top: 20px;
+  }
+  
+  .comparison h3 {
+    margin-bottom: 10px;
+  }
+  
+  .comparison ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .comparison li {
+    margin-bottom: 5px;
+  }
+  
+  .comparison-chart {
+    border: 1px solid #333;
+    padding: 10px;
+  }
+  
